@@ -1,0 +1,19 @@
+<div class="title_container">
+    <h1 class="title_text">Angular<span class="title_version">17</span>: Bases</h1>
+</div>
+
+
+<ul class="sidebar_nav">
+    <li class="sidebar_nav_item">
+        
+        @for (item of navbar; track item.id) {
+            <a [routerLink]="item.route" routerLinkActive="active" class="sidebar_nav_link">
+
+                <div class=" container_span_title">
+                    <span class="span_title_large ">{{ item.label }}</span>
+                    <span class="span_title_small ">{{ item.label_small }}</span>
+                </div>
+            </a>
+        }
+    </li>
+</ul>
