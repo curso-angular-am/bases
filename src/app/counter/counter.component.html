@@ -1,1 +1,17 @@
-<p>counter works!</p>
+<div class="container">
+    <h1 class="mt-3 text-center">{{ title }}</h1>
+    <hr>
+    <div class="row">
+        <div class="col-lg-3">
+            <div class="card shadow">
+                <div class="card-body text-center">
+                    <h3>Contador: {{ counter }}</h3>
+
+                    <button class="btn btn-primary" (click)="incrementarPor(-1)">-1</button>
+                    <button class="btn btn-warning mx-2" (click)="reset()">Reset</button>
+                    <button class="btn btn-success" (click)="incrementarPor(1)">+1</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -6,5 +6,21 @@ import { Component } from '@angular/core';
   styleUrl: './counter.component.scss'
 })
 export class CounterComponent {
+  title: string = 'Mi primera app';
+  counter: number = 10;
+
+
+  incrementarPor(value:number){
+    this.counter = this.counter + value;
+  }
+
+  reset(){
+    this.counter = 10;
+  }
+
+
+
+
+
 
 }
