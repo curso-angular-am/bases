@@ -6,11 +6,11 @@ const routes: Routes = [
     path: 'counter',
     loadChildren: () => import('./counter/counter.module').then( m => m.CounterModule )
   },
- /*  {
+{
     path: 'heroes',
     loadChildren: () => import('./heroes/heroes.module').then( m => m.HeroesModule )
   },
-  {
+  /*{
     path: 'dragonBall',
     loadChildren: () => import('./dbz/dbz.module').then( m => m.DbzModule )
   }, */
