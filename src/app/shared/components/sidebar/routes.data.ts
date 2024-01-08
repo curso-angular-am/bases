@@ -11,10 +11,10 @@ export const routesData = [
         label: 'Heroes',
         label_small: 'Data binding y directivas estructurales'
     },
-     /*{
+     {
         id: 3,
         route: '/dragonBall',
         label: 'Dragon Ball',
         label_small: 'FormsModule, @Input(), @Output() y servicios'
-    }, */
+    },
 ];

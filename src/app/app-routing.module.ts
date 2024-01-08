@@ -10,10 +10,10 @@ const routes: Routes = [
     path: 'heroes',
     loadChildren: () => import('./heroes/heroes.module').then( m => m.HeroesModule )
   },
-  /*{
+  {
     path: 'dragonBall',
     loadChildren: () => import('./dbz/dbz.module').then( m => m.DbzModule )
-  }, */
+  },
   
   { path: '' ,redirectTo: 'counter', pathMatch: 'full' }
 ];
