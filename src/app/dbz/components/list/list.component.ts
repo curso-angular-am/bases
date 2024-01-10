@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Character } from '../../interfaces/character';
 
 @Component({
   selector: 'dbz-list',
@@ -6,5 +7,16 @@ import { Component } from '@angular/core';
   styleUrl: './list.component.scss'
 })
 export class ListComponent {
+
+  // Componente hijo
+  @Input()
+  public characterList: Character[] = [
+    {
+      name: 'Trunks',
+      power: 5000
+    }
+  ] 
+
+
 
 }

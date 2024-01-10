@@ -1,5 +1,5 @@
 <div class="container px-5">
-    <h1 class="mt-3 mb-4 text-center">Personajes</h1>
+    <h1 class="mt-3 mb-4 text-center">Personajes<h3>(Componente Padre)</h3></h1>
 
     <div class="row">
         <div class="col-lg-6">
@@ -7,7 +7,8 @@
         </div>
 
         <div class="col-lg-6">
-            <dbz-list></dbz-list>
+            <!-- El padre 'character' le pasa los datos al hijo 'characterList' -->
+            <dbz-list [characterList]="character"></dbz-list>
         </div>
 
     </div>
