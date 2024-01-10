@@ -1,18 +1,23 @@
 <div class="card shadow">
     <div class="card-body text-center">
         <h4>Listado <h5>(Componente hijo)</h5></h4>
-        <ul class="list-group d-flex list-group-item-success">
+        <ul class="list-group d-flex">
+
             @for (item of characterList;
                 track $index;
                 let isFirst = $first, isLast = $last, isEven = $even, isOdd = $odd ) {
-            <li class="list-group-item">
+            <li class="list-group-item"
+                [ngClass]="{
+                    'list-group-item-danger': isLast,
+                    'list-group-item-primary': isEven
+                }">
                 {{ $index }}.  {{ item.name }} - Poder: {{ item.power }}
             </li>
 
-            <span>¿Es el primero? : {{ isFirst }}</span>
+            <!-- <span>¿Es el primero? : {{ isFirst }}</span>
             <span>¿Es el último? : {{ isLast }}</span>
             <span>¿Es índice par? : {{ isEven }}</span>
-            <span>¿Es índice impar? : {{ isOdd }}</span>
+            <span>¿Es índice impar? : {{ isOdd }}</span> -->
             }
         </ul>
     </div>
