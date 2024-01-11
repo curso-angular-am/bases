@@ -8,7 +8,7 @@ import { Character } from '../../interfaces/character';
 })
 export class MainComponent {
 
-  public character: Character[] = [
+  public characters: Character[] = [
     {
       name: 'Krillin',
       power: 1000
@@ -24,7 +24,17 @@ export class MainComponent {
   ];
 
 
+  onNewCharacter(character: Character){
+    console.log('Main Page');
+    
+    console.log('Personaje capturado desde el padre:',character);
 
+    this.characters.push(character);
+
+    console.log('array character', this.characters);
+    
+    
+  }
 
 
 
