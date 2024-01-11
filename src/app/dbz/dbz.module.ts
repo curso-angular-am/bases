@@ -5,17 +5,20 @@ import { DbzRoutingModule } from './dbz-routing.module';
 import { MainComponent } from './pages/main/main.component';
 import { ListComponent } from './components/list/list.component';
 import { AddCharacterComponent } from './components/add-character/add-character.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
     MainComponent,
     ListComponent,
-    AddCharacterComponent
+    AddCharacterComponent,
+
   ],
   imports: [
     CommonModule,
-    DbzRoutingModule
+    DbzRoutingModule,
+    FormsModule
   ]
 })
 export class DbzModule { }

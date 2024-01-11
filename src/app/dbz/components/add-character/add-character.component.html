@@ -1,16 +1,26 @@
-<div class="card shadow">
+<div class="card shadow mb-3">
     <div class="card-body text-center">
         <form>
             <h4>Nuevo Personaje</h4>
             <div class="mb-3">
-                <input class="form-control" type="text" placeholder="Nombre">
+                <input [(ngModel)]="character.name"
+                        class="form-control"
+                        name="name"
+                        type="text"
+                        placeholder="Nombre">
             </div>
 
             <div class="mb-3">
-                <input class="form-control" type="number" placeholder="Poder">
+                <input [(ngModel)]="character.power"
+                        class="form-control"
+                        name="power"
+                        type="number"
+                        placeholder="Poder">
             </div>
 
-            <button type="submit" class="btn btn-primary">Agregar</button>
+            <button (click)="emitCharacter()" type="submit" class="btn btn-primary">Agregar</button>
+            
+            <pre>{{ character | json }}</pre>
         </form>
     </div>
 </div>
