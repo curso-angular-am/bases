@@ -19,18 +19,15 @@ export class AddCharacterComponent {
   }
 
   emitCharacter(): void{
-    console.log(this.character);
-    if (this.character.name.length === 0) return;
+    console.log('Formulario Character:',this.character);
+
+    if ( this.character.name.length === 0 ) return;
 
     this.onNewCharacter.emit(this.character);
-    
-    // Limpiar los valores del formulario
-    this.character.name = '';
-    this.character.power = 0;
 
-    /* Limpiar valores ( en una linea )
-    this.character = { name = '', power = 0 };
-    */
+    //Limpiar valores ( en una linea )
+    this.character = { name: '', power: 0 };
+    
   }
 
 

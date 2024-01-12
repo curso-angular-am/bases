@@ -8,30 +8,17 @@ import { Character } from '../../interfaces/character';
 })
 export class MainComponent {
 
-  public characters: Character[] = [
-    {
-      name: 'Krillin',
-      power: 1000
-    },
-    {
-      name: 'Goku',
-      power: 9500
-    },
-    {
-      name: 'Vegeta',
-      power: 7500
-    }
-  ];
+  public characters: Character[] = [];
 
 
-  onNewCharacter(character: Character){
+  agregarPersonaje(character: Character){
     console.log('Main Page');
     
     console.log('Personaje capturado desde el padre:',character);
 
+    // agregar nuevo personaje
     this.characters.push(character);
-
-    console.log('array character', this.characters);
+    console.log('Lista personajes padre', this.characters);
     
     
   }

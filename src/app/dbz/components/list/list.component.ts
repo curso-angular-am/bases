@@ -10,13 +10,12 @@ export class ListComponent {
 
   // Componente hijo
   @Input()
-  public characterList: Character[] = [
-    {
-      name: 'Trunks',
-      power: 5000
-    }
-  ] 
+  public characterList: Character[] = [] 
 
 
+  onDeleteCharacter(index:number){
+    console.log('Indice: ', index);
+    
+  }
 
 }
