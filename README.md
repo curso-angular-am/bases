@@ -19,3 +19,9 @@ npm run ng -- add @ng-bootstrap/ng-bootstrap
 ### Bases de Angular
 
 * Configurar sidebar con angular material
+* Directiva ngFor
+* Directiva ngif-else
+* Modularizar componentes de DBZ
+* Input
+* FormModule y ngModel
+* Output

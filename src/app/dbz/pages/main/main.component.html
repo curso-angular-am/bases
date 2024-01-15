@@ -4,12 +4,13 @@
     <div class="row">
         <div class="col-lg-6">
             <!--El hijo tiene un eventEmitter que envia un objeto personaje al padre mediante el (onNewCharacter) -->
-            <dbz-add-character (onNewCharacter)="agregarPersonaje($event)"></dbz-add-character>
+            <dbz-add-character (onNewCharacter)="onNewCharacter($event)"></dbz-add-character>
         </div>
 
         <div class="col-lg-6">
             <!-- El padre 'character' le pasa los datos al hijo 'characterList' -->
-            <dbz-list [characterList]="characters"></dbz-list>
+            <dbz-list [characterList]="characters"
+                    (onDelete)="deleteCharacterFromArray($event)"></dbz-list>
         </div>
 
     </div>
