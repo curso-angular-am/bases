@@ -9,10 +9,20 @@ import { DbzService } from '../../services/dbz.service';
 })
 export class MainComponent {
 
-  constructor(public dbzService: DbzService){}
+  constructor(private dbzService: DbzService){}
+
+  // acceder al servicio para obtener los personajes
+  get characters(): Character[]{
+    return this.dbzService.characters;
+  }
 
 
+  onNewCharacter(character: Character){
+    this.dbzService.addCharacter(character);
+  }
 
-
+  onDeleteCharacter(id: string){
+    this.dbzService.deleteCharacterById(id);
+  }
 
 }
