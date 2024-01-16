@@ -18,7 +18,7 @@ export class MainComponent {
 
 
   onNewCharacter(character: Character){
-    this.dbzService.addCharacter(character);
+    this.dbzService.addNewCharacter(character);
   }
 
   onDeleteCharacter(id: string){
