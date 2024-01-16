@@ -14,7 +14,7 @@
                 {{ $index +1 }}. {{ item.name }} - Poder: {{ item.power }}
 
 
-                <button (click)="onDeleteCharacter($index)" type="button" class="btn btn-danger">X</button>
+                <button (click)="onDeleteCharacter(item.id!)" type="button" class="btn btn-danger">X</button>
 
             </li>
             }

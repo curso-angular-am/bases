@@ -15,12 +15,12 @@ export class ListComponent {
 
   // funcion para emitir el indice
   @Output()
-  public onDelete: EventEmitter<number> = new EventEmitter();
+  public onDelete: EventEmitter<string> = new EventEmitter();
 
 
-  onDeleteCharacter(index: number) {
+  onDeleteCharacter(id: string) {
     //console.log('Indice borrado: ', index);
-    this.onDelete.emit(index);
+    this.onDelete.emit(id);
   }
 
 

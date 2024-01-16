@@ -14,6 +14,15 @@ npm run ng -- add @angular/material
 npm run ng -- add @ng-bootstrap/ng-bootstrap
 ```
 
+* uuid
+```
+npm i uuid
+```
+
+```
+npm i --save-dev @types/uuid
+```
+
 ## Contenido
 
 ### Bases de Angular
@@ -25,3 +34,4 @@ npm run ng -- add @ng-bootstrap/ng-bootstrap
 * Input
 * FormModule y ngModel
 * Output
+* Servicios

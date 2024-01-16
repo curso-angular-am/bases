@@ -11,7 +11,7 @@ export class MainComponent {
 
   constructor(public dbzService: DbzService){}
 
-  
+
 
 
 
