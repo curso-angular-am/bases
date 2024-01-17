@@ -23,6 +23,17 @@ npm i uuid
 npm i --save-dev @types/uuid
 ```
 
+## Generar build de producción
+```
+npm run build
+```
+
+## HTTP Server
+```
+npm i -D http-server
+```
+
+
 ## Contenido
 
 ### Bases de Angular
@@ -35,3 +46,4 @@ npm i --save-dev @types/uuid
 * FormModule y ngModel
 * Output
 * Servicios
+* Despliegues a producción en Netlify: [bases angular 2024](basesangular2024.netlify.app)
