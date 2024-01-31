@@ -46,5 +46,5 @@ npm i -D http-server
 * FormModule y ngModel
 * Output
 * Servicios
-* Despliegue a producción en Netlify: ([basesangular2024](https://basesangular2024.netlify.app))
-* Despliegue a producción usando GitHub Pages [bases angular](https://curso-angular-am.github.io/bases/counter)
+* Despliegue a producción en Netlify: [basesangular2024](https://basesangular2024.netlify.app)
+* Despliegue a producción usando GitHub Pages [bases angular](https://curso-angular-am.github.io/bases)
